@@ -9,7 +9,40 @@
 .text-white{font-family: 'Stack Sans Headline', sans-serif; color: #ffffff;}
 .hrm-text{font-family: 'Stack Sans Notch', sans-Serif; color: #0a0b0b;}
 p{font-family: 'Poppins', sans-serif;}
-.navbar{background-color: rgba(241, 191, 191, 0.09);}
 .cta{font-family: "Stack Sans Notch", sans-serif;}
 .logo-footer{font-family: "Stack Sans Notch", sans-serif; color: #ffffff;}
 .p-footer{font-family: "mackondo", cursive; color: #ffffff;}
+.link-offset-2-hover{text-decoration: none; color: #000000;}
+
+.gradient-bg {
+    background: linear-gradient(135deg, #39d7e4, #011535);
+    min-height: 100vh;
+}
+
+.gradient-text {
+    background: linear-gradient(135deg, #39d7e4, #011535);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.contact-form {
+    background-color: rgba(255, 255, 255, 0.09);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-control {
+    background-color: rgba(255, 255, 255, 0.09);
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.card-contact {
+    background-color: rgba(255, 255, 255, 0.09);
+    border: 1px solid #ced4da;
+    border-radius: 8px 40px 8px 8px;
+    padding: 20px;
+}

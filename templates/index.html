@@ -13,50 +13,89 @@
 </head>
 <body>
 <!--start of navigation bar-->
-    <nav class="navbar navbar-expand-lg sticky-top">
-        <div class="container">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-sm-top">
+          <div class="container-fluid">
             <div>
                 <a href="#" class="navbar-brand d-flex">
                     <img src="/static/images/logo1.png" alt="Logo" width="55" height="50" class="d-inline-block align-text-top">
                      <h2><strong class="header">InvoicelyKE</strong></h2>
                 </a>
             </div>
-
-
-<!--          hamburger menu-->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
-                <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" >
+              <span class="navbar-toggler-icon"></span>
             </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title hrm-text text-info" id="offcanvasNavbarLabel">InvoicelyKe</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                   <ul class="navbar-nav nav-underline mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/home">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pricing">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                  <div class="d-flex gap-3 mt-3 ms-auto my-2 my-lg-0">
+                      <a class="nav-link mt-2" href="#">Login</a>
+                      <a class="btn btn-info" href="#" role="button">Get Started</a>
+                  </div>
 
-
-
-            <div class="collapse navbar-collapse" id="navmenu">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/home">Features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/pricing">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/contact">Contact</a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav ms-auto my-2 my-lg-0">
-                    <li class="nav-item mb-3">
-                        <a class="nav-link" href="#">Login</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="btn btn-info" href="#" role="button">Get Started</a>
-                    </li>
-                </ul>
+              </div>
             </div>
-        </div>
+          </div>
+        </nav>
 
-    </nav>
+
+
+<!--    <nav class="navbar navbar-expand-lg sticky-top bg-light">-->
+<!--        <div class="container">-->
+<!--            <div>-->
+<!--                <a href="#" class="navbar-brand d-flex">-->
+<!--                    <img src="/static/images/logo1.png" alt="Logo" width="55" height="50" class="d-inline-block align-text-top">-->
+<!--                     <h2><strong class="header">InvoicelyKE</strong></h2>-->
+<!--                </a>-->
+<!--            </div>-->
+
+<!--&lt;!&ndash;          hamburger menu&ndash;&gt;-->
+<!--            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">-->
+<!--                <span class="navbar-toggler-icon"></span>-->
+<!--            </button>-->
+
+<!--            <div class="collapse navbar-collapse" id="navmenu" >-->
+<!--                <ul class="navbar-nav nav-underline mx-auto">-->
+<!--                    <li class="nav-item">-->
+<!--                        <a class="nav-link" href="/home">Features</a>-->
+<!--                    </li>-->
+<!--                    <li class="nav-item">-->
+<!--                        <a class="nav-link" href="/pricing">Pricing</a>-->
+<!--                    </li>-->
+<!--                    <li class="nav-item">-->
+<!--                        <a class="nav-link" href="/about">About</a>-->
+<!--                    </li>-->
+<!--                    <li class="nav-item">-->
+<!--                        <a class="nav-link" href="/templates/contact.html">Contact</a>-->
+<!--                    </li>-->
+<!--                </ul>-->
+<!--                <ul class="navbar-nav ms-auto my-2 my-lg-0">-->
+<!--                    <li class="nav-item mb-3">-->
+<!--                        <a class="nav-link" href="#">Login</a>-->
+<!--                    </li>-->
+<!--                    <li class="nav-item">-->
+<!--                        <a class="btn btn-info" href="#" role="button">Get Started</a>-->
+<!--                    </li>-->
+<!--                </ul>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </nav>-->
 
 <!--End of navigation bar-->
 
@@ -286,84 +325,231 @@
         <button type="button" class="btn btn-light mx-3 btn-lg">Sign Up Free</button>
     </div>
 
-<!--footer section-->
-    <section class="mt-5 pt-5 bg-dark text-white">
+<!--Frequently Asked Questions-->
+    <section id="questions" class="p-5">
         <div class="container">
-            <div class="row">
-                <div class="col-md">
-                    <div>
-                        <div>
-                           <div class="d-sm-flex">
-                               <img src="/static/images/logo1.png" class="bg-light rounded-circle" alt="invoice kenya" width="70" height="70" class="rounded-2">
-                               <h1 class="logo-footer mx-2"><span>InvoicelyKE</span></h1>
-                           </div>
-                            <p class="pt-3 lead p-footer">Your trusted partner for effortless invoicing and faster payments.</p>
-                        </div>
-                    </div>
+            <h2 class="text-center mb-4 hrm-text">FAQ InvoicelyKE</h2>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    1. What is InvoicelyKE?
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                      This is a web–based platform that helps SMEs, agribusinesses, freelancers, and service providers create invoices, receive payments via M-Pesa, track client balances, and monitor cash flow—all in one simple dashboard.
+                  </div>
                 </div>
-                <div class="col-md">
-                    <div>
-                        <div class="col-6 col-lg-2 offset-lg-1 mb-3">
-                            <h5>Product</h5>
-                            <ul class="list-unstyled">
-                                <li class="mb-2">
-                                    <a href="">Features</a>
-                                </li>
-                                <li class="mb-2">
-                                   <a href="">Pricing</a>
-                                </li>
-                                <li class="mb-2">
-                                    <a href="">How it Works</a>
-                                </li>
-                                <li class="mb-2">
-                                    <a href="">Testimonial</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    2. How does M-Pesa integration work?
+                  </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                      You connect your <strong style="color: darkgreen">Safaricom Daraja</strong> <strong style="color: #0b5ed7">Consumer Key</strong> and <strong style="color: #0b5ed7">Consumer Secret</strong>, then clients can pay via <strong style="color: #0b5ed7">STK Push</strong>. Once payment is made, the system automatically updates the invoice status to <strong>Paid</strong> in real time.
+                  </div>
                 </div>
-                <div class="col-md">
-                    <div>
-                        <div>
-                            <h5>Company</h5>
-                            <div class="list-group">
-                                <a href="">About Us</a>
-                                <a href="">Contact</a>
-                                <a href="">Career</a>
-                            </div>
-                        </div>
-                    </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    3. How do I create and send an invoice?
+                  </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                      Go to <strong>Invoices → Create Invoice</strong>, fill in the details, and save. You can send invoices via email, PDF download, or by sharing a payment link.
+                  </div>
                 </div>
-                <div class="col-md">
-                    <div>
-                        <div>
-                            <h5>Resources</h5>
-                            <div class="list-group">
-                                <a href="">Support</a>
-                                <a href="">M-PESA API integration</a>
-                                <a href="FAQ"></a>
-                                <a href=""></a>
-                            </div>
-                        </div>
-                    </div>
+              </div>
+                <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                    4. Is my financial and client data secure?
+                  </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                      Yes. All sensitive credentials are encrypted, user access is role-based, and all data is transmitted over secure HTTPS connections.
+                  </div>
                 </div>
-                <div class="col-md">
-                    <div>
-                        <div>
-                            <h5>Connect With Us</h5>
-                            <div class="h3">
-                                <i class="bi bi-twitter-x"></i>
-                                <i class="bi bi-linkedin text-primary"></i>
-                                <i class="bi bi-instagram text-danger"></i>
-                                <i class="bi bi-facebook"></i>
-                                <i class="bi bi-tiktok"></i>
-                            </div>
-                        </div>
-                    </div>
+              </div>
+                <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                    5. Who can use the platform?
+                  </button>
+                </h2>
+                <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                      The tool is ideal for SMEs, agribusinesses, freelancers, and service providers who need fast invoicing, automated M-Pesa payments, and simple financial tracking.
+                  </div>
+                </div>
                 </div>
             </div>
         </div>
     </section>
+
+
+
+
+<!--footer section-->
+<!--    <section class="mt-5 pt-5 bg-dark text-white">-->
+<!--        <div class="container">-->
+<!--            <div class="row">-->
+<!--                <div class="col-sm-6 col-md-4 col-lg-2">-->
+<!--                    <div>-->
+<!--                        <div>-->
+<!--                           <div class="d-sm-flex">-->
+<!--                               <img src="/static/images/logo1.png" class="bg-light rounded-circle" alt="invoice kenya" width="70" height="70" class="rounded-2">-->
+<!--                               <h1 class="logo-footer mx-2"><span>InvoicelyKE</span></h1>-->
+<!--                           </div>-->
+<!--                            <p class="pt-3 lead p-footer">Your trusted partner for effortless invoicing and faster payments.</p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="col-sm-6 col-md-4 col-lg-2">-->
+<!--                    <div class="list-footer-display">-->
+<!--                        <div>-->
+<!--                            <h5>Product</h5>-->
+<!--                            <ul class="list-unstyled">-->
+<!--                                <li class="mb-2">-->
+<!--                                    <a href="">Features</a>-->
+<!--                                </li>-->
+<!--                                <li class="mb-2">-->
+<!--                                   <a href="">Pricing</a>-->
+<!--                                </li>-->
+<!--                                <li class="mb-2">-->
+<!--                                    <a href="">How it Works</a>-->
+<!--                                </li>-->
+<!--                                <li class="mb-2">-->
+<!--                                    <a href="">Testimonial</a>-->
+<!--                                </li>-->
+<!--                            </ul>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="col-md">-->
+<!--                    <div>-->
+<!--                        <div>-->
+<!--                            <h5>Company</h5>-->
+<!--                            <div class="list-group">-->
+<!--                                <a href="">About Us</a>-->
+<!--                                <a href="">Contact</a>-->
+<!--                                <a href="">Career</a>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="col-md">-->
+<!--                    <div>-->
+<!--                        <div>-->
+<!--                            <h5>Resources</h5>-->
+<!--                            <div class="list-group">-->
+<!--                                <a href="">Support</a>-->
+<!--                                <a href="">M-PESA API integration</a>-->
+<!--                                <a href="FAQ"></a>-->
+<!--                                <a href=""></a>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="col-md">-->
+<!--                    <div>-->
+<!--                        <div>-->
+<!--                            <h5>Connect With Us</h5>-->
+<!--                            <div class="h5 d-sm-flex justify-content-center">-->
+<!--                                <i class="bi bi-twitter-x"></i>-->
+<!--                                <i class="bi bi-linkedin text-primary"></i>-->
+<!--                                <i class="bi bi-instagram text-danger"></i>-->
+<!--                                <i class="bi bi-facebook"></i>-->
+<!--                                <i class="bi bi-tiktok"></i>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </section>-->
+
+<!--footer Section-->
+    <footer class="bd-footer py-2 py-md-3 mt-5 bg-dark">
+        <div class="container py-4 py-md-5 px-4 px-md-3 text-white">
+             <div class="row">
+                <div class="col-lg-3 mb-3">
+                    <a class="d-inline-flex align-items-center mb-2 text-body-emphasis text-decoration-none" href="/" aria-label="Bootstrap">
+                        <img src="/static/images/logo1.png" alt="Invoice" width="50" height="45">
+                        <span class="fs-5 hrm-text text-info">InvoicelyKE</span>
+                    </a>
+                    <ul class="list-unstyled small">
+                        <li class="mb-2">
+                            Your trusted partner for effortless invoicing and faster payments.
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+                    <h5>Products</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="link-underline-opacity-0 link-info">Features</a></li>
+                        <li class="mb-2"><a href="#" class="link-underline-opacity-0 link-info">Pricing</a></li>
+                        <li class="mb-2"><a href="#" class="link-underline-opacity-0 link-info">How It Works</a></li>
+                        <li class="mb-2"><a href="#" class="link-underline-opacity-0 link-info">Testimonial</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-lg-2 mb-3">
+                    <h5>Company</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a class="link-underline-opacity-0 link-info" href="#" >About Us</a></li>
+                        <li class="mb-2"><a href="#" class="link-underline-opacity-0 link-info">Contact us</a></li>
+                        <li class="mb-2 display-none"><a href="#" class="link-underline-opacity-0 link-info">Career</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-lg-2 mb-3">
+                    <h5>Resources</h5>
+                    <ul class="list-unstyled">
+                    <li class="mb-2"> <a href="#" class="link-underline-opacity-0 link-info">Support</a> </li>
+                    <li class="mb-2"> <a href="#" class="link-underline-opacity-0 link-info">M-PESA API Integration</a> </li>
+                    <li class="mb-2"><a href="#" class="link-underline-opacity-0 link-info">FAQ</a></li>
+                    </ul>
+                </div>
+                  <div class="col-6 col-lg-2 mb-3">
+                    <h5>Contact Info</h5>
+                    <ul class="list-unstyled">
+                    <li class="mb-2">
+                        <a href="mailto:mosesmwai100@gmail.com" class="link-underline-opacity-0 link-info">support@invoicelyke.com</a>
+                    </li>
+                    <li class="mb-2"><a href="tel:+254769694900" class="link-underline-opacity-0 link-info">+254769694900</a></li>
+                    </ul>
+                </div>
+
+<!--                <div class="col-6 col-lg-2 mb-3">-->
+<!--                    <h5>Connect With Us</h5>-->
+<!--                    <div class="h3">-->
+<!--                        <i class="bi bi-twitter-x"></i>-->
+<!--                        <i class="bi bi-linkedin text-primary"></i>-->
+<!--                        <i class="bi bi-instagram text-danger"></i>-->
+<!--                        <i class="bi bi-facebook"></i>-->
+<!--                        <i class="bi bi-tiktok"></i>-->
+<!--                    </div>-->
+<!--                </div>-->
+            </div>
+            <div class="h3 d-sm-flex justify-content-sm-center border-top pt-3">
+                <a href="http://"><i class="bi bi-twitter-x p-1 link-offset-2-hover"></i></a>
+                <a href="http://"><i class="bi bi-linkedin text-primary px-1"></i></a>
+                <a href="http://"><i class="bi bi-instagram text-danger px-1"></i></a>
+                <a href="http://"><i class="bi bi-facebook px-1"></i></a>
+                <a href="http://"><i class="bi bi-tiktok px-1"></i></a>
+            </div>
+        </div>
+        <div class="col-md-12 text-center mb-3 mb-md-0">© Copyright 2025 - InvoicelyKE. All Rights Reserved.</div>
+    </footer>
 
 
 
